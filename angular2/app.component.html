@@ -1,0 +1,41 @@
+<!--<table class="table table-hover">
+    <tr *ngFor="let item of users; let idx = index">
+        <td *ngIf="true">{{idx+1|printStars}}</td>
+        <td>{{item.startOn|date:'medium'}}</td>
+        <td [ngClass]="{x:true}">{{item.id}}</td>
+        <td [ngClass]="cssTrick">{{item.name|addExtraText}}</td>
+        <td><p [ngStyle]="{color : 'red'}">{{item.age}}</p></td>
+        <td><p>{{item.price | currency:'EUR':true:'4.4-4'}}</p></td>
+    </tr>
+</table>-->
+<!--<h1>{{title}}</h1>
+<h1>{{3 + 4}}</h1>
+<h1>{{true?'Yes':'No'}}</h1>
+
+<p>{{ages | json}}</p>
+
+<ul>
+    <li *ngFor="let item of ages">
+          
+    </li>
+</ul>-->
+
+<!--<pre>
+    <ul>
+        <li *ngFor="let item of ages|someFilter">
+            {{item}}
+        </li>
+    </ul>
+</pre>-->
+<input type="text" name="name" value="{{name}}" [(ngModel)] = "name" />
+<pre>
+    {{this|json}}
+</pre>
+<button (click) = "onClickMe()" type="button">Click me</button>
+<pre>
+    <ul>
+        <user *ngFor="let item of users" [user]="item">
+            
+        </user>
+    </ul>
+</pre>
